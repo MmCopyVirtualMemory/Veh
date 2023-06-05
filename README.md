@@ -12,7 +12,8 @@ Pros:
 * It requires analysis of the VEH itself and may confuse a lot of reverse engineers.
 
 Cons: 
-* This can be somewhat difficult to implement, especially without modification of a linker or compiler.
+* This can be somewhat difficult to implement, especially without modification of a linker or compiler. 
+* Often time stack pointer adjustment occurs at the start of the function and the div will jump before it resets leaving the stack mangled.
 * A successful implementation of this might include: Handcrafted assembly or functions split into various branches and use this instead of jmp or call.
 
 
