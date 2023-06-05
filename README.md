@@ -30,5 +30,6 @@ LONG DivJumpHandler(EXCEPTION_POINTERS* exception_info)
 			return EXCEPTION_CONTINUE_EXECUTION;
 		}
 	}
+	return EXCEPTION_CONTINUE_SEARCH;
 }
 ```
